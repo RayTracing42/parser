@@ -6,7 +6,7 @@
 /*   By: pravoire <pravoire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 12:11:43 by pravoire          #+#    #+#             */
-/*   Updated: 2017/08/23 14:16:21 by pravoire         ###   ########.fr       */
+/*   Updated: 2017/08/23 14:29:04 by pravoire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 # define TAGS_H
 
 /*
- *		XML root tags
- */
+**		XML root tags
+*/
 
 # define SCENE "<scene>"
 # define C_SCENE "</scene>"
 
 /*
- *		XML objects tags
- */
+**		XML objects tags
+*/
 
 # define CAMERA "<camera>"
 # define C_CAMERA "</camera>"
@@ -34,8 +34,8 @@
 # define C_OBJECT "</object>"
 
 /*
- *		XML objects tags types
- */
+**		XML objects tags types
+*/
 
 # define LIGHT_A "ambiant"
 # define LIGHT_O "orb"
@@ -48,8 +48,8 @@
 # define OBJECT_O "cone"
 
 /*
- *		XML objects attributes tags
- */
+**		XML objects attributes tags
+*/
 
 # define ORIGIN "<origin>"
 # define C_ORIGIN "</origin>"
@@ -69,8 +69,8 @@
 # define C_LENGTH "</length>"
 
 /*
- *		XML attributes types
- */
+**		XML attributes types
+*/
 
 # define COORD_X "x"
 # define COORD_Y "y"
