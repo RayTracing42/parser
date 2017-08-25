@@ -6,7 +6,7 @@
 /*   By: pravoire <pravoire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 16:09:30 by pravoire          #+#    #+#             */
-/*   Updated: 2017/08/23 17:04:06 by pravoire         ###   ########.fr       */
+/*   Updated: 2017/08/25 09:35:39 by pravoire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,19 @@ int				src_chk_file_type(char *s)
 
 int				src_chk_file_ext(char *s)
 {
+	char		*tmp;
 	int			src_len;
 	int			ext_offset;
 
-	src_len = ft_strlen(s);
+	tmp = ft_strdup(s);
+	src_len = ft_strlen(tmp);
 	ext_offset = 4;
-	if ((ft_strcmp(".xml", ft_strlower(s + src_len - ext_offset))) != 0)
+	if ((ft_strcmp(ft_strlower(tmp + src_len - ext_offset), ".xml")) != 0)
+	{
+		free(tmp);
 		exit_error(FILE_EXT);
+	}
+	free(tmp);
 	return (0);
 }
 
