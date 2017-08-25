@@ -6,7 +6,7 @@
 /*   By: pravoire <pravoire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 15:24:00 by pravoire          #+#    #+#             */
-/*   Updated: 2017/08/23 16:48:53 by pravoire         ###   ########.fr       */
+/*   Updated: 2017/08/25 11:24:19 by pravoire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,16 @@
 
 int				main(int ac, char **av)
 {
-//	char		*data;
+	char		*data;
+	int			fd;
 
 	src_chk_present(ac);
 	src_chk_file_ext(av[1]);
-	src_chk_file_type(av[1]);
-//	src_get_content(data, av[1]);
+	fd = src_chk_file_type(av[1]);
+	data = src_get_content(fd);
 	/*
 	** Temporary
 	*/
-//	ft_printf("%s\n", data);
+	ft_printf("%s\n%d\n", data, BUFF_SIZE);
 	return (0);
 }

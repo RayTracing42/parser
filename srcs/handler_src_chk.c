@@ -6,7 +6,7 @@
 /*   By: pravoire <pravoire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 16:09:30 by pravoire          #+#    #+#             */
-/*   Updated: 2017/08/25 09:35:39 by pravoire         ###   ########.fr       */
+/*   Updated: 2017/08/25 10:47:38 by pravoire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 int				src_chk_file_type(char *s)
 {
-	int			open_res;
+	int			fd;
 
-	open_res = open(s, O_RDWR);
-	if (open_res == -1)
+	fd = open(s, O_RDWR);
+	if (fd == -1)
 	{
 		if (errno == EISDIR)
 			exit_error(FILE_EXT);
 		else
 			exit_error(FILE_OPEN);
 	}
-	return (0);
+	return (fd);
 }
 
 int				src_chk_file_ext(char *s)

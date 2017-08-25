@@ -6,7 +6,7 @@
 /*   By: pravoire <pravoire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 14:39:17 by pravoire          #+#    #+#             */
-/*   Updated: 2017/08/23 17:06:20 by pravoire         ###   ########.fr       */
+/*   Updated: 2017/08/25 11:24:30 by pravoire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <fcntl.h>
 # include <errno.h>
 
-# define BUFF_SIZE 4096
+# define BUFF_SIZE 512 
 
 /*
 ** handler_src_chk.c
@@ -32,10 +32,10 @@ int				src_chk_file_ext(char *s);
 int				src_chk_file_type(char *s);
 
 /*
-** handler_src.c
+** handler_content.c
 */
 
-//int				src_get_content(char *dest, char *src);
+char			*src_get_content(int fd);
 
 /*
 ** handler_error.c

@@ -6,7 +6,7 @@
 #    By: pravoire <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/05/09 18:19:41 by pravoire          #+#    #+#              #
-#*   Updated: 2017/08/23 17:07:05 by pravoire         ###   ########.fr       *#
+#*   Updated: 2017/08/25 11:03:04 by pravoire         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,8 @@ DEP =			$(INC_DIR)/parser.h
 SRC_DIR =		srcs
 SRC =			$(SRC_DIR)/parser.c \
 				$(SRC_DIR)/handler_src_chk.c \
-				$(SRC_DIR)/handler_error.c
+				$(SRC_DIR)/handler_error.c \
+				$(SRC_DIR)/handler_content.c
 
 OBJ =			$(SRC:.c=.o)
 
