@@ -1,0 +1,20 @@
+<scene>
+	<camera>
+		<direction>
+			<ax>
+				1
+			</ax>
+			<ay>
+				2
+			</ay>
+			<az>
+				3
+			</az>
+		</direction>
+		<origin>
+			<cx>4</cx>
+			<cy>5</cy>
+			<cz>6</cz>
+		</origin>
+	</camera>
+</scene>
